@@ -1,13 +1,13 @@
 #rozwiazania c
 
-zadanie 1
+zadanie 1.  Program obliczający kwadrat i sześcian podanej liczby.
 ```c
-int main() {
-int i;
-int tabela[]={1,2,4,6,12};
-for(i=4; i>=0; i=i-1)
-printf("/i", tabela[i]);
-return 0;
+main(){
+  int i;
+  printf("Podaj liczbe");
+  scanf("%i", &i);
+  printf("Kwadrat to: %i \n" , i*i);
+  printf("Szescian to: %i \n", i*i*i);
 }
 ```
 
@@ -70,7 +70,7 @@ main () {
   }
 ```
 
-zadanie 7.  Program wyliczający sumę.
+zadanie 7.  Program wyliczający.
 ```c
 main() {
   int n,suma;
