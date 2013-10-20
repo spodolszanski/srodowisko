@@ -11,7 +11,7 @@ return 0;
 }
 ```
 
-zadanie 2
+zadanie 2.  Napisać i uruchomić program w C, który wczytuje liczbę naturalną "n" i drukuje wartości słowem kwadratów.
 ```c
 main () {
   int n,suma,i;
@@ -38,7 +38,8 @@ main () {
 }
 ```
 
-zadanie 4.  W miejsce kropek   
+zadanie 4.  W miejsce kropek"..." wpisz kod tak, aby powstał działający program. Program wypisuje liczby z tablicy tabela [], w odwrotnej kolejności, takiej jak 12,6,4,2,1.
+
 ```c
 int main() {
 int tabela[]={1,2,4,6,12};
@@ -49,7 +50,7 @@ return 0;
 }
 ```
 
-zadanie 5
+zadanie 5.  Program wypisujący kolejne potęgi 2, nie przekraczające 2010. FOR.
 ```c
 main () {
   int a=1;
@@ -58,7 +59,7 @@ main () {
 }
 ```
 
-zadanie 6
+zadanie 6.  Program wypisujący kolejne potęgi 2, nie przekraczające 2010. WHILE.
 ```c
 main () {
   int a;
@@ -68,3 +69,22 @@ main () {
     a=a*2;}
   }
 ```
+
+zadanie 7.  Program wyliczający sumę.
+```c
+main() {
+  int n,suma;
+  n=1;
+  suma=0;
+  for(n=1; n<31; n=n+1){
+    if{ (n<16)
+  printf ("Aktualna liczba to:%i \n",n);
+
+    else{ 
+ printf("Aktualna liczba to:%i \n", n*2);
+    }
+    }
+}
+}
+```
+
