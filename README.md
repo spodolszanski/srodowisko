@@ -152,4 +152,19 @@ main () {
   else printf("Twoja liczba jest parzysta\n");
 }
 ```
+zadanie 12. Napisz program, który wczyta dwie liczby całkowite i wypisze czy są równe.
 
+```c
+main () {
+  int i,j;
+  printf("Podaj pirewsza liczbe\n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe\n");
+  scanf("%i", &j);
+  if (i==j)
+    printf("Twoje liczby sa rowne\n");
+  else
+    printf("Twoje liczby nie sa rowne\n");
+}
+```
+zadanie 13. 
