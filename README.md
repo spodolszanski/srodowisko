@@ -193,4 +193,14 @@ main () {
   printf("wynik sumy dwudziestu kwadratow to: %i\n", suma);
 }
 ```
+zadanie 15. Wczytuje liczbe calkowita n>=0 a nastepnie n liczb rzeczywistych (double %lf) i drukuje te 
+liczby w trzech kolumnach w taki sposob, zeby zachowac krycie (tzn. kropka dziesietna zawsze byla w tych 
+samych kolumnach) np gdy uzytkownik:
+poda 7 0.12 -31,5 2,5 -59,01 26,4 -12,0 8,3 
+kol1   0,12  -59,01   8,3
+kol2  -31,50  26,40
+kol3   2,50   -12,00
 
+Mozna zakładac ze liczby naleza do przedzialu (-100,100). Zeby wydrukowal l. rzeczywista na o dl. 6 znakow 
+z 2 cyframi po kropce nalezy w komendzie "printf" uzyc formatu "%6.2 lf" ./zad < plik_z_danymi --> przekierowuje 
+nas do pliku z danymi np. "n"
