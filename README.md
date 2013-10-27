@@ -167,4 +167,30 @@ main () {
     printf("Twoje liczby nie sa rowne\n");
 }
 ```
-zadanie 13. 
+zadanie 13. Napisz program, który wczyta dwie liczby całkowite i wypisze która z nich jest większa.
+
+```c
+main () {
+  int i,j;
+  printf("Podaj pirewsza liczbe\n");
+  scanf("%i", &i);
+  printf("Podaj druga liczbe\n");
+  scanf("%i", &j);
+  if (i>j)
+    printf("Pierwsza liczba jest wiekasza od drugiej\n");
+  else
+    printf("Druga liczba jest wieksza od pierwszej\n");
+}
+```
+zadanie 14. Napisz program, który poda wynik dwudziestu kwadratów.
+
+```c
+main () {
+  int suma,i;
+  suma=0;
+  for(i=1; i<=20; i++) 
+    suma=suma+i*i;
+  printf("wynik sumy dwudziestu kwadratow to: %i\n", suma);
+}
+```
+
