@@ -111,4 +111,17 @@ for(i=i-1;i>=0;i--) printf(" %i ",wynik[i]);
 
 
 }
+```
+zadanie 9.  Napisz program, ktory wczyta liczbę całkowitą i wypisze czy jest większa od 5.
 
+```c
+main () {
+  int i;
+  printf("Podaj liczbe calkowita\n");
+  scanf("%i", &i);
+  if (i>=5)
+    printf("Twoja liczba jest wieksza od 5 \n");
+  else printf("Twoja liczbe jest mniejsza niz od 5 \n");
+
+} 
+```
