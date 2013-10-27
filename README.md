@@ -204,3 +204,23 @@ kol3   2,50   -12,00
 Mozna zakładac ze liczby naleza do przedzialu (-100,100). Zeby wydrukowal l. rzeczywista na o dl. 6 znakow 
 z 2 cyframi po kropce nalezy w komendzie "printf" uzyc formatu "%6.2 lf" ./zad < plik_z_danymi --> przekierowuje 
 nas do pliku z danymi np. "n"
+
+```c
+main () {
+  int n,i;
+  printf("Podaj n\n");
+  scanf("%i", &n);
+  /*deklaracja tablicy*/
+  double tab[n];
+     /*petla wczytujaca dane z tablicy*/
+    for (i=0; i<n; i++)
+      scanf("%lf\n", &tab[i]);
+  /*petla wpyisujaca dane z tablicy*/
+    for (i=0; i<n; i++) {
+    printf("%2.3lf\n", tab[i]);
+    if (i%3==2)
+      printf ("\n");
+    }
+}
+
+```
