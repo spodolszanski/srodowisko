@@ -396,4 +396,5 @@ int main (int argc, char *argv[]) {
 ```
 
 ważne!!!! http://wbzyl.inf.ug.edu.pl/c/pliki, 
+"ćwiczenia z językiem c" Claude Delannoy
 
