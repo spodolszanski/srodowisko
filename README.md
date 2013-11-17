@@ -331,5 +331,45 @@ double tab[d];
    k=k+tab[i]*tablica[i];
  printf("Wynik iloczynu skalarnego %i\n", k);
  }
- ```
+```
+
+zadanie 20. analiza programu
+
+```c
+/* kopiowanie zawartości pliku */
+
+int main (int argc, char *argv[]) {
+  FILE *fin;   /* uchwyt do pliku wejściowego */
+  FILE *fout;  /* uchwyt do pliku wyjściowego */
+  int c;
+  //podanie dokładnie 3 argumentow!!!
+  if (argc != 3) {
+    printf("Użycie: %s SOURCE DEST\n", argv[0]);
+    return 3;
+  }
+  //otwarcie pliku i co chcemy z nim zrobic (zalezy od litery np "r") tutaaj tylk czytac
+  if ((fin = fopen(argv[1], "r")) == NULL) {
+    printf("Nie mogę otworzyć pliku do czytania '%s'\n", argv[1]);
+    return 1;
+  }
+  //otwarcie pliku do zapisu
+  if ((fout = fopen(argv[2], "w")) == NULL) {
+    printf("Nie mogę otworzyć pliku do zapisu '%s'\n", argv[2]);
+    return 2;
+  }
+  // skad dokoad sie skopiowalo
+  printf("Kopiowanie pliku: %s -> %s\n", argv[1], argv[2]);
+  
+// c -znaki ktore sa zawarte w pliku
+  while ((c = fgetc(fin)) != EOF) {
+    fputc(c, fout);
+  }
+  // konieczne zamkniecie obu plikow, jezli na mam zamkniecia dane z pliku sie nie zapisuja
+  fclose(fin);
+  fclose(fout);
+
+  return 0;
+}
+
+```
 
