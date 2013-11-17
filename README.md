@@ -372,7 +372,9 @@ int main (int argc, char *argv[]) {
 }
 
 ```
-zadanie 21. Napisz program, zapisujący do pliku o nazwie dane.dat dwie kolumny liczb
+zadanie 21. Napisz program, zapisujący do pliku o nazwie dane.dat dwie kolumny liczb (W drugiej kolumnie 
+mają być kwadraty liczb z pierwszej kolumny, a w trzeciej liczby losowe z przedziału 0..1. Do generowania 
+liczb losowych wykorzystaj funkcję random z biblioteki stdlib.h.).
 
 ```c
 int main (int argc, char *argv[]) {
@@ -392,4 +394,6 @@ int main (int argc, char *argv[]) {
   return 0;
 }
 ```
+
+ważne!!!! http://wbzyl.inf.ug.edu.pl/c/pliki, 
 
