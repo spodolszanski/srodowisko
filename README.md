@@ -372,4 +372,24 @@ int main (int argc, char *argv[]) {
 }
 
 ```
+zadanie 21. Napisz program, zapisujący do pliku o nazwie dane.dat dwie kolumny liczb
+
+```c
+int main (int argc, char *argv[]) {
+  FILE *fin;
+  FILE *fout;
+  int c, i;
+  double tab[20];
+  double a, b;
+  a=0;
+  for (i=0; i<11; i++) {
+    printf("%2.1lf %2.2lf ", a, a*a);
+  a=a+0.1;
+ b=(double)(rand()%100) / 100;
+    printf("%2.2lf \n", b);
+}
+ 
+  return 0;
+}
+```
 
