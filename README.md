@@ -398,6 +398,7 @@ int main (int argc, char *argv[]) {
 ważne!!!! http://wbzyl.inf.ug.edu.pl/c/pliki, 
 "ćwiczenia z językiem c" Claude Delannoy
 
+zad.
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -431,4 +432,46 @@ main()
   printf("\n");
 }
 ```
+zad.
 
+```c
+#include <stdio.h>
+#define DUZO 1000
+ int cz[DUZO];
+ int k;
+int czynniki ( int dzielnik, int n){
+   while (dzielnik<=n)
+    {
+  if (n%dzielnik==0)
+    {
+      cz[k]=dzielnik;
+      k=k+1;
+     n=n/dzielnik;
+    }
+  else
+    if (dzielnik<n) 
+dzielnik=dzielnik+1;
+     }
+}
+main()
+
+{
+  int i, n, dzielnik;
+  printf("Podaj liczbe naturalna wieksza niz 1: ");
+  scanf("%i",&n);
+  while (n<=1)
+    {
+       printf("Podaj liczbe naturalna wieksza niz 1: ");
+       scanf("%i",&n);
+    }
+  k=0;
+  dzielnik=2;
+  czynniki(dzielnik,n);
+  printf("\nk=%iCzynniki piwersze liczby %i : \n",k,n);
+  for (i=0; i<k; i=i+1)
+    {
+      printf("%i",cz[i]);
+      printf("\n");
+    }
+}
+```
